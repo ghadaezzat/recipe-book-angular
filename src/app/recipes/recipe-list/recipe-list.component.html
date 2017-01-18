@@ -6,7 +6,7 @@
 <div class="row">
   <div class="col-xs-12">
     <ul class="list-group">
-        <trb-recipe-item [recipe]="recipe " (click)="onSelected(recipe)"></trb-recipe-item>
+        <trb-recipe-item  *ngFor =" let recipe of recipes " [recipe]="recipe " (click)="onSelected(recipe)"></trb-recipe-item>
     </ul>
   </div>
 </div>
