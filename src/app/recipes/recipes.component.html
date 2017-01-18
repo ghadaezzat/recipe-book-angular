@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-md-5">
+       Recipe List 
+       <trb-recipe-list (recipeSelected)="selectedRecipe = $event"></trb-recipe-list>
+    </div>
+    <div class="col-md-7">
+        <trb-recipe-detail [selectedRecipe] = "selectedRecipe"></trb-recipe-detail>    
+    </div>
+</div>
